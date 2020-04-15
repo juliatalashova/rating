@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Rating from "./Rating";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component{
+  state = {
+    minRating: 0,
+    maxRating: 3,//n
+    currentRating: 2,//f
+    rateInterval: 1
+  }
+
+  render() {
+    let {currentRating, maxRating} = this.state
+    return (
+      <div className="App">
+          <Rating
+            currentRating={currentRating}
+            maxRating={maxRating}
+          />
+        </div>
+    )
+  }
 }
 
 export default App;

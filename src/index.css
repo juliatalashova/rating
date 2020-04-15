@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.star {
+  cursor: pointer;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  max-width: 940px;
+  text-align: center;
+  padding-top: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
